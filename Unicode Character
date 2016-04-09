@@ -1,0 +1,14 @@
+using System;
+
+
+namespace Unicode_Character
+{
+    class Program
+    {
+        static void Main()
+        {
+            char unicode = '\u002A';
+            Console.WriteLine(unicode);          
+        }
+    }
+}
