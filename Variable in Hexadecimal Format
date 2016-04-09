@@ -1,0 +1,14 @@
+using System;
+
+
+namespace VariableInHexadecimalFormat
+{
+    class Program
+    {
+        static void Main()
+        {
+            int hexadecimal = 0xFE;
+            Console.WriteLine(hexadecimal);
+        }
+    }
+}
