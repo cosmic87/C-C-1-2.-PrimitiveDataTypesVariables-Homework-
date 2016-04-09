@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _9.IsoscelesTriangleOf9Symbols
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("   \u00A9   ");
+            Console.WriteLine("  \u00A9 \u00A9  ");
+            Console.WriteLine(" \u00A9   \u00A9 ");
+            Console.WriteLine("\u00A9 \u00A9 \u00A9 \u00A9");
+        }
+    }
+}
