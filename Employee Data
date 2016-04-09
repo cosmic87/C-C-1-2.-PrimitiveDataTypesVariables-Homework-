@@ -1,0 +1,83 @@
+using System;
+class Program
+    {
+        static void Main()
+        {
+        Console.WriteLine("Your first name:");
+        string firstName = Console.ReadLine();
+
+        Console.WriteLine("Your last name:");
+        string lastName = Console.ReadLine();
+
+        Console.WriteLine("Your age:");
+        byte age;
+        while (!byte.TryParse(Console.ReadLine(), out age) || age <= 0 || age >= 100)
+        {
+            Console.WriteLine("Invalid age.");
+            Console.WriteLine("Please enter age in the interval (0;100): ");
+        }
+
+        Console.WriteLine("Your gender is (f or m):");
+        char gender;
+        while (!char.TryParse(Console.ReadLine(), out gender) || (gender != 'f' && gender != 'm'))
+        {
+            Console.WriteLine("Invalid gender.");
+            Console.WriteLine("Please enter gender (f or m): ");
+        }
+
+        Console.WriteLine("Enter your personal ID number:");
+        ulong iDNumber;
+        while (!ulong.TryParse(Console.ReadLine(), out iDNumber) || iDNumber == 0)
+        {
+            Console.WriteLine("Invalid ID number.");
+            Console.WriteLine("Please enter your personal ID number (ID > 0): ");
+        }
+
+        Console.WriteLine("Enter your unique employee number(from 27560000 to 27569999)");
+        int uniqueN;
+        while (!int.TryParse(Console.ReadLine(), out uniqueN) || (uniqueN < 27560000) || (uniqueN > 27569999))
+        {
+            Console.WriteLine("Invalid employee number.");
+            Console.WriteLine("Please enter  your unique employee number(from 27560000 to 27569999): ");
+        }
+
+        Console.WriteLine("First name: {0}\nLast name: {1}\nAge: {2}", firstName, lastName, age);
+
+        if (gender == 'm')
+        {
+            Console.WriteLine("Your gender is male.");
+        }
+        else
+        {
+            Console.WriteLine("Your gender is female.");
+        }
+
+        Console.WriteLine("ID number: {0}", iDNumber);
+        Console.WriteLine("Unique employee number: {0}", uniqueN);
+    }
+    }
+    
+    
+    
+    
+    
+    
+      using System;
+class Program
+{
+    static void Main()
+    {
+        string firstName = "Ivan";
+        string lastName = "Dzumaliev";
+        int age = 28;
+        string gender = "m";
+        int personalIDNumber = 830656288;
+        int employeeNumber = 27569999;
+        Console.WriteLine("First name : " + firstName);
+        Console.WriteLine("Last name : " + lastName);
+        Console.WriteLine("Age : " + age);
+        Console.WriteLine("Gender : " + gender);
+        Console.WriteLine("Personal ID Number : " + personalIDNumber);
+        Console.WriteLine("Unique employee number : " + employeeNumber);
+    }
+}
