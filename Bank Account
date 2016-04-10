@@ -1,0 +1,25 @@
+using System;
+class BankAccount
+    {
+        static void Main()
+        {
+        string firstName = "Enter your first name : ";
+        Console.WriteLine(firstName);
+        string middleName = "Enter your second name : ";
+        Console.WriteLine(middleName);
+        string lastName = "Enter your last name : ";
+        Console.WriteLine(lastName);
+        decimal balance = 35621235;
+        Console.WriteLine("Available balance : " + balance);
+        string bankName = "Unicredit";
+        Console.WriteLine("Bank name : " + bankName);
+        string IBAN = "BG15657456452450665";
+        Console.WriteLine("IBAN : " + IBAN);
+        decimal firstCreditcard = 456789552584;
+        Console.WriteLine("First credit card number : " + firstCreditcard);
+        decimal secondCreditcard = 456785848785;
+        Console.WriteLine("Second credit card number : " + secondCreditcard);
+        decimal thirdCreditCard = 565225775595;
+        Console.WriteLine("Third credit card number : " + thirdCreditCard);
+        }
+    }
