@@ -1,0 +1,14 @@
+using System;
+class Program
+    {
+        static void Main()
+        {
+        int? intVar = null;
+        double? doubleVar = null;
+        Console.WriteLine("The values of int is: {0}\nThe values of double is: {1}", intVar, doubleVar);
+        intVar += 5;
+        Console.WriteLine("After adding 5 => {0}", intVar);
+        doubleVar += null;
+        Console.WriteLine("After adding the null literal => {0}", doubleVar);
+    }
+    }
